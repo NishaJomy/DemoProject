@@ -1,0 +1,76 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Arial, sans-serif;
+}
+.container {
+
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+}
+
+.sub-one {
+    position: absolute;
+    display:flex;
+    height:40px;
+    width:20%;
+    justify-content: space-around;
+}
+
+.home, .about-us {
+    margin-top:15px;
+    width:150px;
+}
+
+.sub-one ul {
+    list-style:none;
+}
+
+/* here what is edited with class .dropdown added*/
+.sub-one ul li:hover .dropdown{
+    display:block;
+}
+/* above edited */
+
+.sub-one ul li ul:hover {
+    display:block;
+}
+
+.sub-one ul li ul {
+    width:100%;
+    background-color:lightblue;
+    text-align: center;
+    display:none;
+}
+
+.sub-one ul li ul li {
+    margin-bottom: 5px;
+}
+
+.sub-one ul li ul li:hover {
+    background-color: seagreen;
+}
+
+.sub-one a {
+    color:blue;
+    text-decoration:none;
+}
+
+.sub-one button {
+    color:blue;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+body {
+    background-image :   url(img/pexels-wendy-wei-1546039.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
